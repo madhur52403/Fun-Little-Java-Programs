@@ -12,7 +12,7 @@ package Main;
 public class Main extends javax.swing.JFrame {
 
    
-     int xMouse;
+    int xMouse;
     int yMouse;
     public Main() {
         initComponents();
@@ -105,7 +105,7 @@ public class Main extends javax.swing.JFrame {
         this.setVisible(false);
         Widget w = new Widget();
         w.setVisible(true);
-        //System.exit(0);
+       
     }//GEN-LAST:event_WidgetMouseReleased
 
     private void BackgroundMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BackgroundMousePressed

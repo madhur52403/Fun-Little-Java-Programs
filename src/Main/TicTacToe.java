@@ -16,15 +16,16 @@ public class TicTacToe extends javax.swing.JFrame {
     
    
 
-    private String Turn = "X";
-    private String P1 = "Player One";
-    private String P2 = "Player Two";
+    private String Turn = "X"; //Default turn 
+    private String P1 = "Player One"; //Default Name
+    private String P2 = "Player Two"; //Default Name
     private int P1_Count = 0;
     private int P2_Count = 0;
     private int a=0,b=0,c=0,d=0,e=0,f=0,g=0,h=0,i=0;
     private String P_Turn = "";
     private Color B_Color; 
     public TicTacToe() {
+        //Setting the initial screen
         initComponents();
         setSize(600,600);
         setLocationRelativeTo(null);
@@ -36,6 +37,7 @@ public class TicTacToe extends javax.swing.JFrame {
     }
     
     private void Get_Players(){
+        //Initialising players names & scores
         P1 = JOptionPane.showInputDialog(this,
                 "Player One Name:",
                 "Player Name",
@@ -90,12 +92,11 @@ public class TicTacToe extends javax.swing.JFrame {
     
     private void Set_Score(){
           
-        
-        
         jLabelScore.setText(P1 + "'s Score: " + String.valueOf(P1_Count) + "         "+P_Turn+"'s turn"+"         " + P2 + "'s Score: " + String.valueOf(P2_Count));
     }
     
     private void Reset(){
+        //reseting the window after a game
         jButton1.setText("");
         jButton2.setText("");
         jButton3.setText("");

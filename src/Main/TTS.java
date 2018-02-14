@@ -111,7 +111,7 @@ private static final String VOICENAME="kevin16";
     }//GEN-LAST:event_CloseMouseReleased
 
     private void SpeakMouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_SpeakMouseReleased
-        Voice voice;
+        Voice voice; //Making a voice object
         VoiceManager vm=VoiceManager.getInstance();
         voice=vm.getVoice(VOICENAME);
         voice.allocate();
